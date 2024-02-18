@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    #root {
+        @apply h-full;
+    }
+
+    * {
+        @apply box-border;
+    }
+
+    html,
+    body {
+        @apply h-full;
+
+        @apply text-foreground;
+
+        @apply bg-gradient-to-b from-midnight-800 to-midnight-900;
+
+        @apply overflow-clip;
+    }
+}

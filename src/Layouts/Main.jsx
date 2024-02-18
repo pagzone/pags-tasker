@@ -4,7 +4,7 @@ import { HomePage } from '../Pages/';
 
 const Main = () => {
   return (
-    <main>
+    <main className='mx-10 h-screen'>
       <Routes>
         <Route path='/' element={<HomePage />} />
       </Routes>
