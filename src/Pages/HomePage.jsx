@@ -8,12 +8,12 @@ const HomePage = () => {
       <div className="flex h-[514px] gap-12">
           <div className="w-[717px] flex flex-col flex-grow justify-center break-words">
               <h1 className="font-montserrat text-white text-[96px] break-words font-bold">
-                  Nigga's Tasker
+                  Pag's Tasker
               </h1>
               <p className="mb-4 font-poppins text-secondary text-[26px] w-[44rem] break-words">
                   A user-friendly task manager that simplifies collaboration.
                   Just share a link to your project or task, and start working
-                  together effortlessly – as easy as Google Meet!
+                  together effortlessly!
               </p>
               <div className="flex flex-row gap-3">
                   <button className="text-white bg-primary py-2 px-3 rounded-md font-bold mr-4">
