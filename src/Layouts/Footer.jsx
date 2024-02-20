@@ -10,9 +10,9 @@ const Footer = () => {
               Copyright © {year}{" "}
               <a
                   target="_blank"
-                  rel='noreferrer'
-                  href="https://www.facebook.com/karlgt.paguio.9"
-                  className=' hover:underline underline-offset-1'
+                  rel="noreferrer"
+                  href="https://github.com/pagzone"
+                  className=" hover:underline underline-offset-1"
               >
                   PagZone
               </a>
