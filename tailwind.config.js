@@ -19,6 +19,9 @@ module.exports = {
                 poppins: ["Poppins", "sans-serif"],
                 montserrat: ["Montserrat", "sans-serif"],
             },
+            boxShadow: {
+                '3xl': "0 4px 4px 0 rgba(0, 0, 0, 0.5)",
+            }
         },
     },
     plugins: [],
