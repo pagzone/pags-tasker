@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import TwoMen from '../Assets/TwoMen.png';
 import linkLogo from '../Assets/linkLogo.png';
-
 
 const HomePage = () => {
   return (

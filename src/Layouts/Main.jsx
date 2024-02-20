@@ -2,11 +2,12 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import { HomePage } from '../Pages/';
 
+
 const Main = () => {
   return (
       <main className="mx-28">
           <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<HomePage/>} />
           </Routes>
       </main>
   );
