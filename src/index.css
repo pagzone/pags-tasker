@@ -8,7 +8,7 @@
     #root {
         @apply h-full;
     }
-
+    
     * {
         @apply box-border;
     }
@@ -19,9 +19,11 @@
 
         @apply text-foreground;
 
-        @apply bg-gradient-to-b from-midnight-800 to-midnight-900;
+        @apply bg-gradient-to-b from-midnight-700 to-midnight-900;
 
-        @apply overflow-clip;
+        @apply overflow-scroll;
+
+        @apply selection:bg-foreground selection:text-midnight-700;
     }
 
     button {
