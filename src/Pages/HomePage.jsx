@@ -3,9 +3,19 @@ import TwoMen from '../Assets/TwoMen.png';
 import linkLogo from '../Assets/linkLogo.png';
 import { ModalNewProject } from '../Components';
 import Modal from 'react-modal';
-
+import clsx from 'clsx';
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [hasInputValue , setHasInputValue] = useState(false);
+
+     const handleValue = (e) => {
+        const value = e.target.value.length
+
+        if (value > 0)
+           setHasInputValue(true);
+        else 
+           setHasInputValue(false);
+     }
 
     const handleClick = () => {
         setIsOpen(true)
@@ -14,6 +24,13 @@ const HomePage = () => {
     const handleCloseModal = () => {
         setIsOpen(false)
     }
+
+    const addHover = clsx(
+        hasInputValue && "hover:text-primary",
+        hasInputValue && "hover:bg-primary",
+        hasInputValue && "hover:bg-opacity-10"
+    )
+
 
     return (
         <>
@@ -39,6 +56,7 @@ const HomePage = () => {
                                 className="px-3 py-2 outline-none rounded-md border-[1px] border-secondary text-white bg-midnight-900 pl-9 max-w[150px]"
                                 type="text"
                                 placeholder="Enter a code or a link."
+                                onChange={(e) => {handleValue(e)} }
                             />
                             <img
                                 className="absolute top-[10px] left-3 h-6"
@@ -46,7 +64,7 @@ const HomePage = () => {
                                 alt="link-logo"
                             />
                         </div>
-                        <button className="px-3 py-2 rounded-md font-bold text-secondary hover:text-primary hover:bg-primary hover:bg-opacity-10">
+                        <button className={`px-3 py-2 rounded-md font-bold text-secondary ${addHover}`} disabled={!hasInputValue}>
                             Join
                         </button>
                     </div>
