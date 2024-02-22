@@ -46,7 +46,7 @@ const HomePage = () => {
                                 alt="link-logo"
                             />
                         </div>
-                        <button className="font-bold text-secondary">
+                        <button className="px-3 py-2 rounded-md font-bold text-secondary hover:text-primary hover:bg-primary hover:bg-opacity-10">
                             Join
                         </button>
                     </div>
