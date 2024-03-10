@@ -4,7 +4,6 @@ import linkLogo from '../Assets/linkLogo.png';
 import { ModalNewProject } from '../Components';
 import Modal from 'react-modal';
 import clsx from 'clsx';
-
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [hasInputValue , setHasInputValue] = useState(false);
@@ -54,7 +53,7 @@ const HomePage = () => {
                         </button>
                         <div className="relative">
                             <input
-                                className="px-3 py-2 outline-none rounded-md border-[1px] border-secondary text-white bg-midnight-900 pl-9 max-w[150px]"
+                                className="px-3 py-2 outline-none rounded-md border-[1px]  pl-9 max-w[150px]"
                                 type="text"
                                 placeholder="Enter a code or a link."
                                 onChange={(e) => {handleValue(e)} }
