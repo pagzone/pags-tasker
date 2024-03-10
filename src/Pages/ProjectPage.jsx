@@ -1,4 +1,5 @@
 import HeaderLogo from '../Assets/HeaderLogo.png';
+import { TaskItem } from '../Components';
 
 const ProjectPage = () => {
   return (
@@ -22,6 +23,7 @@ const ProjectPage = () => {
            <button className="w-[200px] text-[14px] mx-4 p-2.5 rounded-3xl border-secondary bg-midnight-900
                font-montserrat font-bold">Invite members</button>
        </div>
+       <TaskItem />
     </div>
   )
 }

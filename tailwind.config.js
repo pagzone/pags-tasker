@@ -6,6 +6,7 @@ module.exports = {
             colors: {
                 midnight: {
                     700: "#26262F",
+                    750: "#121213",
                     800: "#202028",
                     850: "#1F1F27",
                     900: "#16161A",
@@ -14,14 +15,18 @@ module.exports = {
                 secondary: "#94A1B2",
                 tertiary: "#2cb67d",
                 foreground: "#FFFFFE",
+                darkCharcoal: "#1B1B21",
+                green: {
+                    400: "#2CB67D",
+                },
             },
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
                 montserrat: ["Montserrat", "sans-serif"],
             },
             boxShadow: {
-                '3xl': "0 4px 4px 0 rgba(0, 0, 0, 0.5)",
-            }
+                "3xl": "0 4px 4px 0 rgba(0, 0, 0, 0.5)",
+            },
         },
     },
     plugins: [],
