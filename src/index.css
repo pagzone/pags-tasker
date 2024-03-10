@@ -17,8 +17,6 @@
 
         @apply bg-gradient-to-b from-midnight-700 to-midnight-900;
 
-        @apply overflow-scroll;
-
         @apply selection:bg-foreground selection:text-midnight-700;
     }
 

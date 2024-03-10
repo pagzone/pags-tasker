@@ -4,6 +4,7 @@ import linkLogo from '../Assets/linkLogo.png';
 import { ModalNewProject } from '../Components';
 import Modal from 'react-modal';
 import clsx from 'clsx';
+
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [hasInputValue , setHasInputValue] = useState(false);
