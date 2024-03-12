@@ -1,6 +1,7 @@
 import HeaderLogo from '../Assets/HeaderLogo.png';
 import addSymbol from '../Assets/addSymbol.png';
 import { TaskItem } from '../Components';
+import TaskBoard from '../Components/TaskBoard';
 
 function ProjectPage() {
   return (
@@ -64,6 +65,7 @@ function ProjectPage() {
                       />
                   </div>
               </div>
+              <TaskBoard />
           </div>
       </div>
   );

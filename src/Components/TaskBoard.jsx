@@ -8,9 +8,9 @@ const TaskBoard = () => {
                 <h1 className="text-2xl font-bold">Task Board</h1>
             </div>
             <div className="task-board-header text-xl my-2 text-secondary grid justify-between font-bold px-6 w-full grid-cols-task-board">
-                <div className="flex flex-1 justify-between">
+                <div className="grid grid-cols-2 justify-between">
                     <p className="grow">Task</p>
-                    <div className="flex flex-1 justify-between items-center">
+                    <div className="grid grid-cols-4 justify-between items-center">
                         <p>End Date</p>
                         <p>Status</p>
                         <p>Progress</p>

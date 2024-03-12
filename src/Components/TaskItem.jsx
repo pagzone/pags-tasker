@@ -6,13 +6,13 @@ const TaskItem = ({ projectId }) => {
         <div className="w-full flex items-center">
             <div className="grid grid-cols-task-board w-full">
                 <div
-                    className="w-full flex font-poppins font-bold text-secondary bg-darkCharcoal h-20 rounded-md
+                    className="w-full grid grid-cols-2 font-poppins font-bold text-secondary bg-darkCharcoal h-20 rounded-md
     items-center px-7 shadow-md shadow-midnight-750"
                 >
                     <p className="text-l grow">Project Name</p>
-                    <div className="flex justify-between flex-1 items-center">
+                    <div className="grid grid-cols-4 justify-between flex-1 items-center">
                         <p className="text-base">End Date</p>
-                        <div className="rounded-sm text-white bg-green-400 px-2 py-1">
+                        <div className="rounded-sm text-white bg-green-400 px-2 py-1 w-fit">
                             <p className="text-sm">Not Started</p>
                         </div>
                         <p className="text-base">0%</p>
