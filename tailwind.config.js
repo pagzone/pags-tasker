@@ -27,6 +27,9 @@ module.exports = {
             boxShadow: {
                 "3xl": "0 4px 4px 0 rgba(0, 0, 0, 0.5)",
             },
+            gridTemplateColumns: {
+                'task-board': 'minmax(0, 1fr) 35px',
+            }
         },
     },
     plugins: [],

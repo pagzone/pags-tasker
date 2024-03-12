@@ -64,7 +64,6 @@ function ProjectPage() {
                       />
                   </div>
               </div>
-              <TaskItem />
           </div>
       </div>
   );
