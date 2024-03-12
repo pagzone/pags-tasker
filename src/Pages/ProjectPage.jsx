@@ -40,7 +40,7 @@ function ProjectPage() {
               </button>
           </div>
 
-          <div className="w-full h-[70px] px-9 py-5">
+          <div className="w-full h-[70px] px-9 py-5 flex flex-col gap-5">
               <div className=" flex justify-between items-center">
                   <input
                       className="px-4 py-2 outline-none rounded-full w-[240px] bg-midnight-900"
@@ -64,6 +64,7 @@ function ProjectPage() {
                       />
                   </div>
               </div>
+              <TaskItem />
           </div>
       </div>
   );
