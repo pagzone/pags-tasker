@@ -1,6 +1,7 @@
 import React from "react";
 import TaskItem from "./TaskItem";
 import MyListbox from "./ListBox";
+
 const TaskBoard = () => {
     return (
         <div className="font-montserrat">
@@ -17,12 +18,18 @@ const TaskBoard = () => {
                         <p>Progress</p>
                         <p>Assignees</p>
                     </div>
-                </div>
-                <div></div>
+                </div>  
             </div>
-            <div className="task-list font-poppins flex flex-col gap-3">
+            
+            <div className="task-list font-poppins flex flex-col gap-3 overflow-y-auto max-h-[400px] py-2">
+ 
                 <TaskItem />
                 <TaskItem />
+                <TaskItem />    
+                <TaskItem />
+                <TaskItem />
+                <TaskItem />    
+
             </div>
         </div>
     );

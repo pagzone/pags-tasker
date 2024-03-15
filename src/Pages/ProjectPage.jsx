@@ -1,11 +1,11 @@
 import HeaderLogo from "../Assets/HeaderLogo.png";
-import addSymbol from "../Assets/addSymbol.png";
+import addLogo from "../Assets/addLogo.png";
 import TaskBoard from "../Components/TaskBoard";
 
 const ProjectPage = () => {
     return (
         <div className="flex h-screen">
-            <div className="bg-midnight-900 w-[230px]">
+            <div className="bg-midnight-900 w-[230px] ">
                 <div className="bg-[#2CB67D] p-3">
                     <img
                         className="h-10"
@@ -16,7 +16,7 @@ const ProjectPage = () => {
 
                 <div className="flex font-montserrat font-bold p-3 justify-between items-center">
                     <div className="text-[14px]">MEMBERS</div>
-                    <div className="text-[12px] text-secondary cursor-pointer">
+                    <div className="text-[12px] text-secondary transition cursor-pointer hover:text-[#d1d5db] active:text-[#9ca3af]">
                         View All
                     </div>
                 </div>
@@ -33,8 +33,8 @@ const ProjectPage = () => {
                 </div>
 
                 <button
-                    className="w-[200px] text-[14px] my-3 mx-4 p-2.5 rounded-3xl border-secondary bg-midnight-900 border-[1px]
-                  font-montserrat font-bold"
+                    className="w-[200px] cursor-pointer text-[14px] my-3 mx-4 p-2.5 rounded-3xl border-secondary bg-midnight-900 border-[1px]
+                  font-montserrat font-bold transition hover:bg-midnight-700 active:bg-[#16161b]"
                 >
                     Invite members
                 </button>
@@ -49,22 +49,23 @@ const ProjectPage = () => {
                     />
                     <div className="flex justify-between items-center w-[200px]">
                         <div className="relative">
-                            <button className="w-[125px] text-white bg-primary py-2 px-4 rounded-full pl-9 font-bold shadow-lg text-[15px]">
+                            <button className="w-[125px] cursor-pointer text-white bg-primary py-2 px-4 rounded-full pl-9 font-bold shadow-lg text-[15px]
+                           hover:bg-violet-600 active:bg-violet-700 ">
                                 Add new
                             </button>
                             <img
                                 className="h-[27px] absolute  top-[5px] left-1.5"
-                                src={addSymbol}
+                                src={addLogo} alt="add-symbol"
                             />
                         </div>
                         <img
-                            className="rounded-full border-[1px] h-[40px] w-[40px] bg-white"
+                            className="rounded-full border-[1px] h-[40px] w-[40px] bg-white cursor-pointer"
                             src=""
                             alt="profile"
                         />
                     </div>
                 </div>
-                <TaskBoard/>
+                  <TaskBoard/>
             </div>
         </div>
     );
